@@ -1,0 +1,486 @@
+#chapter 1
+
+<html> 
+<head> 
+<title> Chapter 1</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+ <h1>Computer System</h1> 
+ <div class="content"> 
+ <div class="section"> 
+ <p>A computer system is a combination of hardware and software designed to perform  specific tasks or computations. It includes physical components (hardware) and instructions  (software) to process, store, and output data.</p> 
+ </div> 
+ <div class="section history"> 
+ <h2>History of Computers</h2> 
+ <p><strong>First Generation (1940-1956):</strong> Used vacuum tubes for processing.  <br> 
+ Examples: <span class="highlight">ENIAC, UNIVAC</span>. Large, expensive, and  consumed a lot of power.</p> 
+  
+ <p><strong>Second Generation (1956-1963):</strong> Replaced vacuum tubes with  transistors. <br> 
+ Examples: <span class="highlight">IBM 7090</span>. Faster, smaller, and more  reliable.</p> 
+  
+ <p><strong>Third Generation (1964-1971):</strong> Integrated circuits (ICs) replaced  transistors. <br> 
+ Examples: <span class="highlight">IBM 360</span>. Introduction of operating  systems.</p> 
+  
+ <p><strong>Fourth Generation (1971-Present):</strong> Microprocessors integrated all  components. <br> 
+ Examples: <span class="highlight">Intel 4004, Apple II</span>. Personal computers  became common.</p> 
+  
+ <p><strong>Fifth Generation (Present and Beyond):</strong> Artificial intelligence (AI)  and quantum computing. <br> 
+ Examples: <span class="highlight">Supercomputers, AI-driven systems</span>.</p>  </div> 
+ <div class="section"> 
+ <h2>General Types of Computers</h2> 
+ <ul class="list"> 
+ <li><strong>Personal Computers (PCs):</strong> Desktops, laptops, and workstations  used by individuals.</li> 
+ <li><strong>Mainframe Computers:</strong> Large-scale systems used by  organizations for bulk data processing.</li> 
+ <li><strong>Supercomputers:</strong> Extremely fast computers used for complex  simulations and research.</li> 
+ <li><strong>Embedded Systems:</strong> Special-purpose computers integrated into  devices like cars and medical equipment.</li> 
+ <li><strong>Minicomputers:</strong> Smaller than mainframes but capable of  handling medium-scale tasks.</li> 
+ </ul> 
+ </div> 
+ <div class="section"> 
+ <h2>Input and Output Devices</h2> 
+ <p><strong>Input Devices:</strong> Devices that send data to the computer for  processing. <br> 
+ Examples: Keyboard, mouse, scanner, microphone, touch screen, camera.</p> 
+ <p><strong>Output Devices:</strong> Devices that display or output the processed data  from the computer. <br> 
+ Examples: Monitor, printer, speakers, projector.</p> 
+ </div> 
+ <div class="section"> 
+ <h2>Computer Architecture</h2> 
+ <p>The architecture of a computer defines the structure and functionality of its  components.</p> 
+ <h3>Central Processing Unit (CPU)</h3> 
+ <ul> 
+ <li><strong>Control Unit (CU):</strong> Directs the operations of the processor.</li>  <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs calculations and logic  operations.</li> 
+ <li><strong>Registers:</strong> Temporary storage used during processing.</li>  </ul> 
+ <h3>Memory (Primary Storage)</h3> 
+ <ul> 
+ <li><strong>RAM (Random Access Memory):</strong> Temporary, volatile memory  used to store data.</li> 
+ <li><strong>Cache Memory:</strong> High-speed storage for frequently accessed  data.</li> 
+ </ul> 
+ <h3>Secondary Storage</h3> 
+ <ul> 
+ <li><strong>Devices:</strong> Used for permanent data storage. Examples: Hard  drives, SSDs, CDs, DVDs.</li> 
+ </ul> 
+ <h3>Bus System</h3>
+ <ul> 
+ <li><strong>Data bus:</strong> Transfers data between components.</li>  <li><strong>Address bus:</strong> Carries the address of data to be accessed.</li>  <li><strong>Control bus:</strong> Carries control signals.</li>  </ul> 
+ <h3>Input/Output Interface</h3> 
+ <p>Facilitates communication between the computer and external devices.</p>  </div> 
+ </div> 
+</body> 
+</html>
+
+
+
+Chapter 2 
+Code 
+<html> 
+<head> 
+<title> Chapter 2</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+<h1> Number System, Conversion & Boolean Logic</h1> <br> 
+  
+ <div class="content"> 
+ <!-- Number System Section --> 
+ <div class="section"> 
+ <h2>Number System in Computers</h2> 
+ <p>The number system in computers is based on different numeral systems that represent  data and information. Commonly used number systems in computing include:</p> 
+ <ul> 
+ <li><strong>Binary (Base-2):</strong> Uses two digits, 0 and 1. The most fundamental  number system used in computers.</li> 
+ <li><strong>Octal (Base-8):</strong> Uses digits 0-7. It is a shorthand way to represent  binary numbers.</li> 
+ <li><strong>Hexadecimal (Base-16):</strong> Uses digits 0-9 and letters A-F to  represent values. It's a compact way to represent binary data.</li> 
+ <li><strong>Decimal (Base-10):</strong> The number system humans use, consisting  of digits 0-9.</li> 
+ </ul> 
+ <h3>Conversion between Number Systems</h3> 
+ <div class="table-container"> 
+ <table> 
+ <tr> 
+ <th>Decimal</th> 
+ <th>Binary</th> 
+ <th>Octal</th> 
+ <th>Hexadecimal</th> 
+ </tr> 
+ <tr> 
+ <td>10</td> 
+ <td>1010</td> 
+ <td>12</td> 
+ <td>A</td> 
+ </tr> 
+ <tr> 
+ <td>15</td> 
+ <td>1111</td> 
+ <td>17</td> 
+ <td>F</td>
+ </tr> 
+ <tr> 
+ <td>20</td> 
+ <td>10100</td> 
+ <td>24</td> 
+ <td>14</td> 
+ </tr> 
+ </table> 
+ </div> 
+ </div> 
+ <!-- 1's and 2's Complement Section --> 
+ <div class="section"> 
+ <h2>1's and 2's Complement</h2> 
+ <p>The <strong>1's complement</strong> and <strong>2's complement</strong> are  methods for representing negative binary numbers. These are commonly used in computers for  performing arithmetic operations with signed numbers.</p> 
+ <h3>1's Complement</h3> 
+ <p>In the 1's complement method, to find the complement of a binary number, you simply  flip all the bits (change 1 to 0 and 0 to 1).</p> 
+ <p><strong>Example:</strong> The 1's complement of <code>1010</code> is  <code>0101</code>.</p> 
+ <h3>2's Complement</h3> 
+ <p>The 2's complement is obtained by first finding the 1's complement of the binary  number, then adding 1 to the least significant bit (LSB) of the result.</p> 
+ <p><strong>Example:</strong> To find the 2's complement of <code>1010</code>:</p>  <ul> 
+ <li>1's complement of <code>1010</code> is <code>0101</code>.</li>  <li>Adding 1 to the LSB: <code>0101 + 1 = 0110</code>.</li>  </ul> 
+ <p>Thus, the 2's complement of <code>1010</code> is <code>0110</code>.</p> 
+ <h3>Example Table for 1's and 2's Complement</h3> 
+ <div class="table-container"> 
+ <table> 
+ <tr> 
+ <th>Binary Number</th> 
+ <th>1's Complement</th> 
+ <th>2's Complement</th> 
+ </tr> 
+ <tr> 
+ <td>1010</td> 
+ <td>0101</td> 
+ <td>0110</td> 
+ </tr> 
+ <tr> 
+ <td>1101</td> 
+ <td>0010</td>
+ <td>0011</td> 
+ </tr> 
+ <tr> 
+ <td>1001</td> 
+ <td>0110</td> 
+ <td>0111</td> 
+ </tr> 
+ </table> 
+ </div> 
+ </div> 
+ <!-- Logic Gates Section --> 
+ <div class="section"> 
+ <h2>Logic Gates</h2> 
+ <p>Logic gates are the basic building blocks of digital circuits, which perform logical  operations on one or more binary inputs to produce a single output. The most common logic gates  are:</p> 
+ <ul> 
+ <li><strong>AND Gate:</strong> The output is 1 only if both inputs are 1.</li>  <li><strong>OR Gate:</strong> The output is 1 if at least one input is 1.</li>  <li><strong>NOT Gate:</strong> The output is the inverse (opposite) of the input.</li>  <li><strong>NAND Gate:</strong> The output is 0 only if both inputs are 1 (NOT  AND).</li> 
+ <li><strong>NOR Gate:</strong> The output is 0 if at least one input is 1 (NOT  OR).</li> 
+ <li><strong>XOR Gate:</strong> The output is 1 if the inputs are different (exclusive  OR).</li> 
+ <li><strong>XNOR Gate:</strong> The output is 1 if the inputs are the same (exclusive  NOT OR).</li> 
+ </ul> 
+ <div class="example"> 
+ <h3>Truth Tables for Logic Gates</h3> 
+ <table> 
+ <tr> 
+ <th>Input A</th> 
+ <th>Input B</th> 
+ <th>AND</th> 
+ <th>OR</th> 
+ <th>NOT A</th> 
+ </tr> 
+ <tr> 
+ <td>0</td> 
+ <td>0</td> 
+ <td>0</td> 
+ <td>0</td> 
+ <td>1</td> 
+ </tr> 
+ <tr>
+ <td>0</td> 
+ <td>1</td> 
+ <td>0</td> 
+ <td>1</td> 
+ <td>1</td> 
+ </tr> 
+ <tr> 
+ <td>1</td> 
+ <td>0</td> 
+ <td>0</td> 
+ <td>1</td> 
+ <td>0</td> 
+ </tr> 
+ <tr> 
+ <td>1</td> 
+ <td>1</td> 
+ <td>1</td> 
+ <td>1</td> 
+ <td>0</td> 
+ </tr> 
+ </table> 
+ </div> 
+ <p>Each logic gate performs a specific logical function, and combinations of these gates  are used in more complex operations in computer circuits.</p> 
+ </div> 
+ </div> 
+</body> 
+</html> 
+</body> 
+</html>
+
+
+#Chapter 3 
+<html> 
+<head> 
+<title> Chapter 3</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+<h1>Computer Software and Operating System</h1> <br> 
+ <div class="content"> 
+ <!-- Computer Software Section --> 
+ <div class="section"> 
+ <h2>Computer Software</h2> 
+ <p>Computer software is a collection of programs that enable a computer to perform  specific tasks. It can be divided into two main categories:</p> 
+ <ul> 
+ <li><strong>System Software:</strong> Software that provides basic functionality for  the computer hardware and helps run other software. Examples include the operating system (OS)  and device drivers.</li> 
+ <li><strong>Application Software:</strong> Software that performs specific tasks for  users, such as word processing, web browsing, and gaming. Examples include Microsoft Word,  Google Chrome, and Photoshop.</li> 
+ </ul> 
+ <p><strong>Types of Software:</strong></p> 
+ <ul> 
+ <li><strong>Utility Software:</strong> Performs system maintenance tasks like virus  scanning, file management, and data backup. Examples include antivirus programs and disk  cleaners.</li> 
+ <li><strong>Programming Software:</strong> Tools and environments that help  developers write, test, and debug code. Examples include IDEs (Integrated Development  Environments) like Visual Studio and Eclipse.</li> 
+ </ul> 
+ </div> 
+ <!-- Operating System Section --> 
+ <div class="section"> 
+ <h2>Operating System</h2> 
+ <p>An operating system (OS) is system software that manages computer hardware,  software resources, and provides common services for computer programs. It acts as an  intermediary between users and the computer hardware.</p> 
+ <p><strong>Functions of an Operating System:</strong></p> 
+ <ul> 
+ <li><strong>Process Management:</strong> The OS manages processes, including their  execution, scheduling, and termination.</li> 
+ <li><strong>Memory Management:</strong> The OS allocates and manages memory  for programs, ensuring each process has the required resources.</li> 
+ <li><strong>File Management:</strong> The OS organizes and controls access to files  and directories, handling tasks like reading, writing, and deleting files.</li>
+ <li><strong>Device Management:</strong> The OS controls input and output devices  like the keyboard, mouse, printer, and hard drives.</li> 
+ <li><strong>Security and Access Control:</strong> The OS enforces security policies  and controls access to resources, ensuring unauthorized users cannot access sensitive data.</li>  </ul> 
+ <h3>Types of Operating Systems</h3> 
+ <ul> 
+ <li><strong>Single-tasking OS:</strong> Can only run one program at a time (e.g., MS DOS).</li> 
+ <li><strong>Multi-tasking OS:</strong> Can run multiple programs simultaneously  (e.g., Windows, macOS, Linux).</li> 
+ <li><strong>Real-time OS:</strong> Provides timely and deterministic responses to  events, often used in embedded systems (e.g., embedded OS in medical devices, robotics).</li>  <li><strong>Distributed OS:</strong> Manages a group of independent computers and  presents them as a single system to the user (e.g., Google’s Android OS, Network Operating  Systems).</li> 
+ </ul> 
+ <p><strong>Popular Operating Systems:</strong></p> 
+ <ul> 
+ <li><strong>Windows:</strong> A popular OS developed by Microsoft, commonly  used in personal computers and businesses.</li> 
+ <li><strong>macOS:</strong> Apple's operating system for Mac computers, known for  its user-friendly interface and stability.</li> 
+ <li><strong>Linux:</strong> An open-source, Unix-like OS widely used in servers,  programming, and development environments.</li> 
+ <li><strong>Android:</strong> A mobile OS based on Linux, developed by Google,  used in smartphones and tablets.</li> 
+ <li><strong>iOS:</strong> Apple's mobile OS used in iPhones, iPads, and iPod  Touch.</li> 
+ </ul> 
+ </div> 
+ </div> 
+</body> 
+</html> 
+</body> 
+</html>
+
+
+#Chapter 4 
+Code 
+<html> 
+<head> 
+<title> Chapter 4</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+<h1>Application Package</h1> <br> 
+ <h2>What is an Application Package?</h2> 
+ <p>An application package is a collection of pre-installed software designed to help users  perform specific tasks. These packages come with various applications bundled together for ease  of use, providing functionalities for a variety of purposes.</p> 
+  
+ <h3>Types of Application Packages</h3> 
+ <ul> 
+ <li><strong>Office Suites:</strong> Productivity software like Microsoft Office (Word,  Excel, PowerPoint).</li> 
+ <li><strong>Media Players:</strong> Software for playing audio/video files (e.g., VLC  Media Player, Windows Media Player).</li> 
+ <li><strong>Graphics and Design Software:</strong> Tools for image editing and design  (e.g., Adobe Photoshop, CorelDRAW).</li> 
+ <li><strong>Accounting Software:</strong> Used for business financial management  (e.g., QuickBooks, Tally).</li> 
+ <li><strong>Educational Software:</strong> Tools for learning (e.g., Duolingo,  educational games).</li> 
+ </ul> 
+ <h3>Common Examples of Application Packages</h3> 
+ <ul> 
+ <li><strong>Microsoft Office Suite:</strong> Includes Word, Excel, PowerPoint,  Outlook.</li> 
+ <li><strong>Adobe Creative Cloud:</strong> A suite of tools for design and video editing  like Photoshop, Illustrator, Premiere Pro.</li> 
+ <li><strong>QuickBooks:</strong> Accounting software for managing business  finances.</li> 
+ </ul> 
+ <h3>Advantages of Application Packages</h3> 
+ <ul> 
+ <li>Saves time by providing all necessary tools in one package.</li>  <li>Pre-configured to work together smoothly without needing additional setup.</li>  <li>Regular updates and technical support from the vendor.</li> 
+ </ul> 
+ </div> 
+ <footer> 
+ <p>&copy; 2025 Application Package Notes</p>
+
+
+ </footer> 
+</body> 
+</html> 
+
+
+#Chapter 5 
+Code 
+<html> 
+<head> 
+<title> Chapter 5</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+<h1>Programming concepts and logics (C language)</h1> <br> 
+ <h2>What is Programming?</h2> 
+ <p>Programming is the process of writing instructions for a computer to execute.</p>   
+ <h2>Why Learn C?</h2> 
+ <p>C is a powerful general-purpose language used for system programming, game  development, and more.</p> 
+  
+ <h2>Basic Structure of a C Program</h2> 
+ <pre> 
+ #include &lt;stdio.h&gt; 
+ int main() { 
+ printf("Hello, World!\n"); 
+ return 0; 
+ } 
+ </pre> 
+  
+ <h2>Key Features of C</h2> 
+ <ul> 
+ <li>Fast and efficient</li> 
+ <li>Low-level access to memory</li> 
+ <li>Rich set of built-in functions</li> 
+ <li>Portability</li> 
+ </ul> 
+  
+ <h2>Basic Data Types in C</h2> 
+ <ul> 
+ <li>int - Integer</li> 
+ <li>float - Floating point number</li> 
+ <li>char - Character</li> 
+ <li>double - Double precision floating point number</li> 
+ </ul> 
+  
+ <h2>Control Statements</h2> 
+ <p>Used to control the flow of execution in a program.</p> 
+ <ul> 
+ <li>if-else</li> 
+ <li>switch-case</li>
+ <li>for loop</li> 
+ <li>while loop</li> 
+ <li>do-while loop</li> 
+ </ul> 
+</body> 
+</html> 
+</body> 
+</html> 
+
+
+#Chapter 6 
+Code 
+<html> 
+<head> 
+<title> Chapter 6</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+<h1>Web Technology-I (HTML + CSS)</h1> <br> 
+  
+ <h2>What is Web Technology?</h2> 
+ <p>Web technology refers to the tools and techniques used to create, develop, and manage  websites and web applications.</p> 
+  
+ <h2>Key Web Technologies</h2> 
+ <ul> 
+ <li><strong>HTML (HyperText Markup Language)</strong> - The standard markup  language used to create the structure of web pages.</li> 
+ <li><strong>CSS (Cascading Style Sheets)</strong> - A style sheet language used to describe  the look and formatting of a document written in HTML.</li> 
+ <li><strong>JavaScript</strong> - A programming language used to create dynamic and  interactive web content.</li> 
+ <li><strong>HTTP/HTTPS</strong> - Protocols used for communication between web  browsers and servers.</li> 
+ <li><strong>Web Servers</strong> - Software that serves web pages to users (e.g., Apache,  Nginx).</li> 
+ </ul> 
+  
+ <h2>What is CSS?</h2> 
+ <p>CSS (Cascading Style Sheets) is used to control the design and layout of web pages. It allows  developers to separate content from presentation.</p> 
+  
+ <h2>Types of CSS</h2> 
+ <ul> 
+ <li><strong>Inline CSS</strong> - Applied directly within an HTML tag using the  <code>style</code> attribute.</li> 
+ <li><strong>Internal CSS</strong> - Defined within a <code>&lt;style&gt;</code> tag  inside the <code>&lt;head&gt;</code> section.</li> 
+ <li><strong>External CSS</strong> - Written in a separate file with a <code>.css</code>  extension and linked using the <code>&lt;link&gt;</code> tag.</li> 
+ </ul> 
+  
+ <h2>Advantages of CSS</h2> 
+ <ul> 
+ <li>Improves website design and layout.</li> 
+ <li>Reduces HTML code repetition.</li> 
+ <li>Enhances website responsiveness and user experience.</li>
+ 
+
+ <li>Allows for easier maintenance and updates.</li> 
+ </ul> 
+</body> 
+</html> 
+
+
+#Chapter 7 
+Code 
+<html> 
+<head> 
+<title> Chapter 7</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+<h1>Multimedia</h1> <br> 
+ <p>Multimedia is the integration of multiple forms of media such as text, images, audio, video,  and animations.</p> 
+  
+ <h2>Types of Multimedia</h2> 
+ <ul> 
+ <li><b>Text</b> - Written content used for communication.</li> 
+ <li><b>Images</b> - Visual representation of objects, people, or scenes.</li>  <li><b>Audio</b> - Sound elements such as music, speech, or effects.</li>  <li><b>Video</b> - Moving images used for entertainment, education, or  communication.</li> 
+ <li><b>Animation</b> - A sequence of images that create the illusion of motion.</li>  </ul> 
+  
+ <h2>Examples</h2> 
+ <p>Here are some examples of multimedia elements:</p> 
+  
+ <h3>Image</h3> 
+ <img src="example.jpg" alt="Example Image" width="10%" height="20%">   
+ <h3>Audio</h3> 
+ <audio controls> 
+ <source src="example.mp3" type="audio/mpeg"> 
+ Your browser does not support the audio element. 
+ </audio> 
+  
+ <h3>Video</h3> 
+ <video width="320" height="240" controls> 
+ <source src="example.mp4" type="video/mp4"> 
+ Your browser does not support the video tag. 
+ </video> 
+</body> 
+</html> 
+</body> 
+</html>
+
+
+#Chapter 8 
+Code 
+<html> 
+<head> 
+<title> Chapter 8</title> 
+<link rel="stylesheet" href="decor.css"> 
+</head> 
+<body> 
+ <h1>Information Security and Cyber Law of Nepal</h1> 
+  
+ <h2>Information Security</h2> 
+ <p>Information security refers to the protection of data from unauthorized access, use,  disclosure, disruption, modification, or destruction.</p> 
+  
+ <h3>Key Principles of Information Security:</h3> 
+ <ul> 
+ <li><b>Confidentiality:</b> Ensuring that information is accessible only to those authorized  to access it.</li> 
+ <li><b>Integrity:</b> Maintaining the accuracy and reliability of data.</li>  <li><b>Availability:</b> Ensuring that data is available to authorized users when  needed.</li> 
+ </ul> 
+  
+ <h2>Cyber Law of Nepal</h2> 
+ <p>The cyber law of Nepal is mainly governed by the Electronic Transactions Act, 2006 (ETA  2063), which regulates electronic transactions and cyber-related activities.</p>   
+ <h3>Key Provisions of Cyber Law in Nepal:</h3> 
+ <ul> 
+ <li>Illegal access to computer systems and unauthorized hacking is a punishable offense.</li>  <li>Online fraud, identity theft, and cybercrimes are subject to legal action.</li>  <li>Publication of illegal digital content is prohibited.</li> 
+ <li>Digital signatures and electronic transactions are legally recognized.</li>  </ul> 
+  
+ <h2>Conclusion</h2> 
+ <p>Information security is crucial for protecting digital assets, and Nepal’s cyber law helps  regulate cyber activities to ensure safe online practices.</p> 
+</body> 
+</html>
+
