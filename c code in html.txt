@@ -1,0 +1,219 @@
+C program to demonstrate the use of string handling functions
+#include <stdio.h>
+#include <string.h>
+int main() {
+char str1[100], str2[100];
+printf("Enter the first string: ");
+fgets(str1, sizeof(str1), stdin);
+str1[strcspn(str1, "\n")] = '\0';
+printf("Enter the second string: ");
+fgets(str2, sizeof(str2), stdin);
+str2[strcspn(str2, "\n")] = '\0';
+printf("\nLength of the string \"%s\" is: %zu\n", str1, strlen(str1));
+char temp[100];
+strcpy(temp, str1);
+printf("Copied string: \"%s\"\n", temp);
+int result = strcmp(str1, str2);
+if (result == 0) {
+printf("The strings \"%s\" and \"%s\" are equal.\n", str1, str2);
+} else if (result < 0) {
+printf("The string \"%s\" is less than \"%s\".\n", str1, str2);
+} else {
+printf("The string \"%s\" is greater than \"%s\".\n", str1, str2);
+}
+char concatenated[200];
+strcpy(concatenated, str1);
+strcat(concatenated, str2);
+printf("Concatenation of \"%s\" and \"%s\" is: \"%s\"\n", str1, str2, concatenated);
+return 0;
+}
+
+
+2. C program code to demonstrate different types of pre-processor directives
+(Macros, File Inclusion, Conditional Compilation, Other directives)
+
+#include <stdio.h>
+#define PI 3.14159
+#define SQUARE(x) ((x) * (x))
+#define DEBUG 1
+int main() {
+double radius = 5.0;
+double area = PI * SQUARE(radius); // Using the SQUARE macro
+printf("Area of the circle with radius %.2f is: %.2f\n", radius, area);
+
+#if DEBUG
+printf("Debug mode is enabled.\n");
+#else
+printf("Debug mode is disabled.\n");
+#endif
+#ifdef PI
+printf("PI is defined as: %.5f\n", PI);
+#endif
+
+#ifndef PI
+#define PI 3.14159
+printf("PI was not defined, so it's now defined as: %.5f\n", PI);
+#endif
+return 0;
+}
+
+
+3. C language code for Different types of tokens (keywords, identifiers,
+constants, strings, special symbols, operators)
+#include <stdio.h>
+int main() {
+int x = 5;
+float y = 10.5;
+y = y + x;
+printf("Sum of x and y: %.2f\n", y);
+return 0;
+}
+
+
+4.C language code for
+
+• Different types of Input/Output Functions
+(Formatted I/O Functions • printf(), scanf() )
+#include <stdio.h>
+int main() {
+int age;
+float height;
+// Using scanf() for formatted input
+printf("Enter your age: ");
+scanf("%d", &age); // Read integer input
+printf("Enter your height: ");
+scanf("%f", &height); // Read float input
+// Using printf() for formatted output
+printf("Your age is %d and your height is %.2f meters.\n", age, height);
+return 0;
+}
+
+
+
+• Unformatted I/O Functions • putchar(), getchar(), puts(), gets()
+#include <stdio.h>
+int main() {
+int age;
+float height;
+char name[50];
+char singleChar;
+printf("Enter your age: ");
+scanf("%d", &age); printf("Enter your height (in meters): ");
+scanf("%f", &height);
+printf("Enter your name: ");
+scanf("%s", name);
+printf("\nFormatted Output using printf():\n");
+printf("Your age is: %d\n", age);
+printf("Your height is: %.2f meters\n", height);
+printf("Your name is: %s\n", name);
+printf("\nUnformatted Input/Output functions:\n");
+printf("Enter a single character: ");
+singleChar = getchar();
+printf("You entered: ");
+putchar(singleChar);
+printf("\n");
+printf("Enter a string (using gets()): ");
+getchar();
+gets(name);
+printf("You entered: ");
+puts(name);
+return 0;
+}
+
+5. C language code demonstrating the use of switch case and goto label
+
+#include <stdio.h>
+int main() {
+int choice;
+printf("Enter a number between 0 and 3: ");
+scanf("%d", &choice);
+switch(choice) {
+case 1:
+
+printf("You chose 1\n");
+break;
+case 2:
+printf("You chose 2\n");
+break;
+case 3:
+printf("You chose 3\n");
+break;
+default:
+printf("Invalid choice\n");
+}
+if (choice < 1 || choice > 2) {
+goto invalid_choice; }
+printf("Your choice is valid.\n");
+return 0;
+invalid_choice:
+printf("Error: Invalid input.\n");
+}
+
+
+6.C language code to print different Patterns (square, rectangle, right pyramid,
+inverse right pyramid)
+
+i.Square
+#include <stdio.h>
+int main() {
+int n = 5; // Size of the square
+for (int i = 0; i < n; i++) {
+for (int j = 0; j < n; j++) {
+printf("* "); // Print a star
+}
+printf("\n");
+}
+return 0;
+}
+
+
+
+ii.Rectangle
+#include <stdio.h>
+int main() {
+int rows = 4, columns = 6;
+for (int i = 0; i < rows; i++) {
+for (int j = 0; j < columns; j++) {
+printf("* "); // Print a star
+}
+printf("
+\n");
+}
+return 0; }iii. Right pyramid
+#include <stdio.h>
+int main() {
+int n = 5; // Number of rows
+for (int i = 1; i <= n; i++) {
+// Print spaces
+for (int j = 1; j <= n
+- i; j++) {
+
+printf(" ");
+}
+// Print stars
+for (int j = 1; j <= i; j++) {
+printf("* ");
+}
+printf("
+\n");
+}
+return 0; }
+
+
+
+iv.Inverse Right pyramid
+#include <stdio.h>
+int main() {
+int n = 5; // Number of rows
+for (int i = n; i >= 1; i--) {
+// Print spaces
+for (int j = 1; j <= n - i; j++) {
+printf(" ");
+}
+// Print stars
+for (int j = 1; j <= i; j++) {
+printf("* ");
+}
+printf("\n");
+}
+return 0;
